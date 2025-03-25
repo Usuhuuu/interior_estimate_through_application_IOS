@@ -55,6 +55,7 @@ function LoginPage() {
         Alert.alert("로그인이 했습니다.");
         navigateToScreen("홈");
       } else {
+        console.log(response.status + "sda");
         setErrors("이메일이나 비밀번호가 틀렸습니다.");
         Alert.alert(errors);
         setLoading(false);

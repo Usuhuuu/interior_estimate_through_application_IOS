@@ -7,6 +7,7 @@ import AuthNavigator from "./authNavigator";
 import Icon from "react-native-vector-icons/FontAwesome";
 import IconDifferent from "react-native-vector-icons/Ionicons";
 import UserScreen from "../authContainer/USER/userScreen";
+import LoginPage from "../authContainer/login";
 
 const Tab = createBottomTabNavigator();
 const TabNavigator = () => {
@@ -35,7 +36,7 @@ const TabNavigator = () => {
           ),
         }}
         // component={AuthNavigator}
-        component={UserScreen}
+        component={LoginPage}
       />
       <Tab.Screen
         name="전체메뉴"
